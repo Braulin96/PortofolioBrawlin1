@@ -1,13 +1,326 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Sriracha&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Passion+One&family=Sriracha&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* base styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  color: #333;
+  line-height: 1.23536;
+  font-weight: 400;
+  letter-spacing: -.022em;
+}
+.navbar {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color:#86868B;
+  flex-wrap: wrap;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbarContainer{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
 }
+
+.navbar h1 {
+  color:#1D1D1F;
+  font-size: 28px;
+}
+
+.navbar h1:hover {
+  color: #2997ff;
+}
+
+.navbar .links {
+  margin-left: auto;
+  color: #f5f5f7;
+}
+
+/* header com slam/home/poetry*/
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding-bottom: 0px;
+  color: #f5f5f7;;
+  font-size: 22px; 
+  flex-wrap: wrap;
+}
+
+.navbar a:hover {
+  color: #2997ff;
+}
+
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.homeGeral div{
+  display: flex;
+  flex-wrap: wrap;
+  width: 200%;
+  justify-content: right;
+  align-items: center;
+  margin-top: 45px;
+}
+
+.homeGeral{
+  display: flex;
+}
+
+img{
+  position: relative;
+  padding-top: 10px;
+  width: 30%;
+  margin: 0px auto;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+#details {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+
+#details h2{
+  color: black;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#details h3{
+  color: #2997ff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#details p{
+  font-size: 14px;
+}
+
+body{
+  background-color: #fbfbfd;
+  background-repeat: no-repeat; 
+  background-size: 100%;
+  min-height: 100%;
+  position: relative;
+}
+
+body p{
+  color: #86868B;
+  font-size: 13px;
+  margin-left: 20px;
+  margin-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 0px;  
+}
+
+#slam h3{
+  margin-top: 30px;
+  margin-bottom: 5px;
+  color: #0066CC;
+  font-size: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+#slam h3:hover {
+  color: #2997ff;
+  text-decoration: underline;
+}
+
+#slam p{
+  margin-top: 30px;
+}
+
+#YoutubeChannel {
+  font-size: 14px;
+  padding-bottom: 30px;
+  text-align: left;
+  margin-left: 70px;
+}
+
+#YoutubeChannel a:hover {
+  color: #2997ff;
+  text-decoration: underline;
+}
+
+footer{
+  background-color:#7ea3c297;;
+  margin-top: auto;
+  bottom: 0;
+  width: 100%;
+  position: absolute; 
+}
+
+/*div footer*/
+#contact div{
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#contact{
+  display: flex;
+  padding-top: 3px;
+  padding-bottom:2px;
+  padding: 0 auto;
+  list-style-type: none;
+  margin-top: 5px;
+}
+
+/*eliminar o sublinhado causado no nosso abbr*/
+abbr[title] {
+  border-bottom: none !important;
+  cursor: inherit !important;
+  text-decoration: none !important;
+}
+
+button{
+background-color: #86868B;
+color:#f5f5f7;
+border-radius: 5px;
+}
+
+#poema {
+  background-image:url('./componentes/images/passaro.png');
+  background-size: cover;
+  background-position: center;
+  /*Fixing the image*/
+  background-attachment: fixed;
+  width: 100%;
+   padding-top: 0px;
+  padding-bottom: 18px;
+}
+
+#poema p {
+  color:  #86868B;
+  font-size: 18px;
+  padding-bottom: 15px;
+  transition: all 1s ease;
+  margin-left: 60px;
+  padding-bottom: 0px;
+  margin-top: 30px;
+}
+
+#poema p:hover {
+  color:  #2997ff;
+  font-size: 20px;
+  animation: all 2s ;
+}
+
+img#slamedit{
+  padding-top: 50px;
+  padding-left: 100px;
+}
+/*----------slam ---------*/
+.container{
+  min-height: 100vh;
+  position: relative;
+}
+
+main{
+  padding-top: 80px;
+}
+  
+button{
+  padding:10px 20px;
+  font-size: 15px;
+  margin: 15px;
+  background-color:#f5f5f7;
+  transition: all 0.3s ease;
+  color: #86868B; 
+} 
+
+button:hover{
+  color: #2997ff;
+  background-color: white
+}
+
+.buttonWrapper{
+  width: 100%;
+  display: flex;
+}
+
+.buttonInner{
+  margin: 0 auto;
+  margin-top: 20px;
+}
+ 
+#quotes{
+  font-size: 10px;
+}
+/*-----------------------------slam-----------------------------------------*/
+
+#slam div{
+  display: flex;
+  max-width: 500px;
+  min-width: 100px;
+}
+
+#slam {
+  width:100%;
+  display: flex;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+} 
+
+#primeiroIframe div{
+  display: flex;
+  padding-right: 20px;
+}
+
+#primeiroIframe{
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-left: 70px;
+}
+
+#PhraseSlam h2{
+  width: 50%;
+  height: 100vh;
+  text-align: center;
+  font-size: 22px;
+  color: #86868B;
+  line-height: 2.1;
+  position: fixed; 
+  margin-left: 50px;
+  max-width: 700px;
+  min-width: 20px;
+  right: 100px;
+  top: 120px;
+  left: 600px;
+  margin-left: 50px;
+  transition: all 2s ease;
+}
+
+#PhraseSlam{
+  width: 50%;
+  padding-left: 5px;
+  justify-content: right;
+  margin-top: 30px;
+  flex-wrap: wrap; 
+}
+
+#PhraseSlam h2:hover {
+  color:#7eb6ebe6;
+}  
+
+ 
